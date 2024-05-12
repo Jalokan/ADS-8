@@ -1,7 +1,7 @@
 // Copyright 2021 NNTU-CS
 #include "train.h"
 Train::Train() {
-    countOp = 0;
+    countOp = 1;
     first = nullptr;
 }
 
@@ -35,7 +35,7 @@ int Train::getLength() {
             current = current->next;
         }
         else {
-            current->light = false;
+            current->light = true;
             for (int i = 0; i < Dyn_count; i++) {
                 countOp++;
                 current = current->prev;
