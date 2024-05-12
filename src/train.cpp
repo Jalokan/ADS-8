@@ -39,7 +39,7 @@ int Train::getLength() {
                 current = current->prev;
             }
             if (current->light == false) {
-                return Dyn_count; 
+                return Dyn_count;
             } else {
                 Dyn_count = 1;
                 countOp++;
