@@ -38,8 +38,7 @@ int Train::getLength() {
                 countOp++;
                 current = current->prev;
             }
-            if (current->light == false) return Dyn_count;
-            else {
+            if (current->light == false) return Dyn_count; else {
                 Dyn_count = 1;
                 countOp++;
                 current = current->next;
